@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#031033">
+<title>Gaming.ARnc — Play • Explore • Enjoy</title>
+<style>
+:root{--bg:#020b24;--panel:#06183c;--panel2:#071f4b;--line:#087fe8;--cyan:#00f0ff;--blue:#087bff;--purple:#9b22ff;--pink:#ff168e;--text:#f4f8ff;--muted:#a8c3ed;--gold:#ffe000;--green:#00e7a2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#102f82 0,#041233 45%,#01081b 100%);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;min-height:100vh}button,input{font:inherit}button,a{-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}.topbar{height:82px;display:flex;align-items:center;gap:24px;padding:10px 22px;border-bottom:1px solid #00bfff;box-shadow:0 4px 22px #007dff22;position:sticky;top:0;z-index:20;background:#020c28ed;backdrop-filter:blur(16px)}.brand{display:flex;align-items:center;gap:10px;min-width:310px}.brand-mark{font-size:43px;filter:drop-shadow(0 0 12px #00d9ff)}.brand-name{font-weight:1000;font-style:italic;font-size:30px;letter-spacing:-1.5px;white-space:nowrap}.brand-name span{color:var(--gold)}.tagline{font-size:12px;text-align:center;margin-top:1px;color:#d7e8ff;font-weight:700}.search-wrap{position:relative;flex:1;max-width:620px}.search-wrap .mag{position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:22px}.search{width:100%;height:46px;padding:0 18px 0 52px;border:1px solid #7d24ff;border-radius:30px;background:linear-gradient(100deg,#0b1251,#003ba9);color:white;outline:none;box-shadow:inset 0 0 0 1px #00aaff44}.search:focus{border-color:var(--cyan);box-shadow:0 0 0 3px #00d9ff25}.search::placeholder{color:#b8d1ff}.topnav{display:flex;align-items:center;gap:20px;margin-left:auto}.navbtn{background:none;border:0;color:#eef7ff;font-weight:800;cursor:pointer;padding:12px 4px;white-space:nowrap;border-bottom:4px solid transparent}.navbtn .ico{font-size:23px;margin-right:6px;vertical-align:middle}.navbtn.active{color:var(--cyan);border-color:var(--cyan)}.layout{display:grid;grid-template-columns:220px minmax(0,1fr) 314px;gap:12px;padding:12px 17px 0;max-width:1800px;margin:auto}.sidebar{padding:8px 0;min-width:0}.side-link{display:flex;align-items:center;gap:14px;padding:11px 13px;border-radius:12px;margin-bottom:3px;cursor:pointer;border:1px solid transparent;color:#e9f2ff;font-size:15px;font-weight:650;transition:.2s}.side-link .ico{font-size:25px;width:34px;text-align:center}.side-link:hover,.side-link.active{background:linear-gradient(100deg,#7c00ff,#0b7dff 75%,#00d9ff);border-color:#a02cff;box-shadow:0 5px 18px #003cff4c}.side-promo{margin:24px 4px 10px;padding:16px 10px;border-radius:19px;text-align:center;background:linear-gradient(135deg,#b900ff,#4512ff 55%,#00cfff);border:2px solid #e900ff;box-shadow:0 0 22px #7d00ff44}.side-promo .big{font-size:52px;display:block;filter:drop-shadow(0 0 10px #fff)}.side-promo h3{margin:4px 0 8px;font-size:19px}.side-promo p{font-size:12px;margin:0}.main{min-width:0}.hero{height:267px;border-radius:17px;overflow:hidden;border:1px solid #00bfff;background:radial-gradient(circle at 50% 40%,#1445bb,#031039 55%,#21005c);position:relative;display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 8px 28px #001eff22}.hero:before,.hero:after{content:"";position:absolute;width:240px;height:240px;transform:rotate(35deg);background:linear-gradient(135deg,#00f0ff,#4521ff 45%,#fa16d7);clip-path:polygon(50% 0,60% 36%,100% 50%,60% 62%,50% 100%,39% 62%,0 50%,39% 36%);opacity:.8;filter:drop-shadow(0 0 20px #00dfff)}.hero:before{left:-30px;top:20px}.hero:after{right:-10px;bottom:-30px;transform:rotate(60deg) scale(.8)}.hero-art{position:absolute;font-size:94px;left:3%;bottom:9px;filter:drop-shadow(0 0 18px #00cfff);transform:rotate(-12deg)}.hero-art.right{left:auto;right:3%;font-size:80px;transform:rotate(10deg)}.hero-content{position:relative;z-index:2;max-width:540px;padding:10px;text-shadow:0 2px 10px #000}.crown{font-size:35px;color:var(--gold)}.eyebrow{font-size:18px;font-weight:900;font-style:italic}.hero h1{font-size:clamp(32px,4vw,48px);line-height:1;margin:5px 0 8px;font-weight:1000;font-style:italic;letter-spacing:-1.6px;color:#fff;text-shadow:0 0 12px #00cfff,2px 4px #4e00ff}.hero h1 span{color:var(--gold)}.hero p{font-size:18px;font-weight:800;margin:5px 0 14px}.primary{border:0;border-radius:28px;padding:12px 28px;background:linear-gradient(100deg,#ffed00,#ffb900);color:#06112e;font-weight:1000;cursor:pointer;box-shadow:0 5px 16px #ffdb003d}.primary:hover,.play:hover{filter:brightness(1.13);transform:translateY(-1px)}.dots{display:flex;gap:7px;justify-content:center;margin-top:10px}.dot{width:8px;height:8px;border-radius:50%;background:#168cff}.dot:first-child{background:white}.cat-strip{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;margin:10px 0;padding:4px;border:1px solid #134d9b;border-radius:14px;background:#041432}.cat-tile{min-height:82px;border-radius:14px;border:1px solid #00cfff;background:linear-gradient(145deg,var(--tile),#061a4d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;cursor:pointer;font-weight:800;font-size:13px;text-align:center;box-shadow:inset 0 0 12px #ffffff0c;transition:.2s}.cat-tile .ico{font-size:31px}.cat-tile:hover,.cat-tile.active{transform:translateY(-2px);box-shadow:0 0 16px var(--tile);outline:1px solid white}.section-head{display:flex;align-items:center;justify-content:space-between;margin:10px 4px 9px}.section-head h2{font-size:23px;margin:0;letter-spacing:-.5px}.viewall{background:#061b40;color:var(--cyan);border:1px solid var(--cyan);border-radius:25px;padding:8px 15px;font-weight:850;cursor:pointer}.game-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px}.game-card{min-width:0;overflow:hidden;border:1px solid #00bfff;border-radius:14px;background:linear-gradient(180deg,#092354,#020d2b);box-shadow:0 4px 12px #0006;transition:.2s;cursor:pointer}.game-card:hover{transform:translateY(-3px);border-color:#e900ff;box-shadow:0 8px 24px #007bff35}.game-art{height:99px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;background:radial-gradient(circle at 30% 20%,var(--glow),transparent 50%),linear-gradient(135deg,var(--c1),var(--c2));font-size:54px;text-shadow:0 5px 12px #0008}.game-art:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,#ffffff22,transparent 48%),repeating-linear-gradient(125deg,transparent 0 18px,#ffffff0d 19px 21px)}.game-art:after{content:"✦";position:absolute;left:10px;top:5px;font-size:16px;color:#fff9;text-shadow:0 0 10px #00eaff}.game-art span{position:relative;filter:drop-shadow(0 4px 7px #0007);transform:rotate(-5deg)}.game-info{padding:7px 8px 8px}.game-title{font-size:13px;font-weight:900;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:4px}.game-category{font-size:11px;color:var(--cyan);margin-bottom:7px;white-space:nowrap}.play{display:block;text-align:center;border:0;border-radius:22px;padding:7px 4px;color:white;font-size:12px;font-weight:950;background:linear-gradient(90deg,var(--play1),var(--play2));box-shadow:0 2px 8px #0004;transition:.2s}.game-card .play{cursor:pointer}.lower-banner{margin:12px 0 0;border-radius:15px;min-height:72px;padding:9px 14px;display:flex;align-items:center;gap:14px;overflow:hidden;background:linear-gradient(100deg,#ec2bc7,#3927ff 40%,#001c76 70%,#ff2cc4);border:1px solid #a32cff}.lower-banner .pad{font-size:42px}.lower-banner h3{margin:0 0 4px;font-size:17px}.lower-banner p{margin:0;font-size:12px;color:#e6f4ff}.mini-games{display:flex;gap:8px;margin-left:auto}.mini-game{border:1px solid #2e9eff;border-radius:11px;background:#020d2bd9;padding:7px 10px;font-size:12px;white-space:nowrap;cursor:pointer;font-weight:800}.mini-game b{font-size:19px;margin-right:6px}.rightcol{padding:4px 0}.panel{border:1px solid #087fe8;border-radius:15px;background:linear-gradient(150deg,#061a41,#020b25);padding:12px;margin-bottom:13px;box-shadow:0 6px 20px #0003}.feature-label{display:inline-flex;align-items:center;gap:7px;border-radius:25px;background:linear-gradient(90deg,#ffbd00,#b000ff);padding:7px 13px;font-weight:1000;position:relative;z-index:2;margin-bottom:-4px}.featured-art{height:190px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:95px;background:radial-gradient(circle at 50% 20%,#65faff,#1e70d8 40%,#13085a 75%);overflow:hidden}.featured-art span{filter:drop-shadow(0 10px 8px #0009);font-size:100px;position:relative;z-index:1}.panel h2{font-size:21px;margin:8px 0 6px}.panel p{font-size:14px;line-height:1.45;color:#e4edff;margin:0 0 10px}.featured-play{display:block;border:0;border-radius:28px;text-align:center;padding:11px;background:linear-gradient(90deg,#6900ff,#ad22ff);font-weight:950;cursor:pointer}.rank-title{font-size:21px;font-weight:1000;margin:0 0 10px}.rank{display:grid;grid-template-columns:34px 47px minmax(0,1fr) auto;gap:8px;align-items:center;padding:6px 0;font-size:12px}.ranknum{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(130deg,#087cff,#00d7ff);font-weight:1000;font-size:16px}.rank-art{height:42px;border-radius:8px;border:1px solid #248bff;display:grid;place-items:center;font-size:25px;background:linear-gradient(135deg,#102c7c,#9b00ff)}.rank-name{font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.rating{color:var(--gold);font-size:13px;white-space:nowrap}.empty{grid-column:1/-1;padding:30px;text-align:center;border:1px dashed #227bce;border-radius:14px;color:var(--muted)}footer{margin-top:0;border-top:1px solid #087fe8;padding:14px 22px;display:flex;align-items:center;gap:18px;background:#020b22;font-size:12px;color:#b9d1f5}footer strong{font-size:16px;color:var(--cyan)}footer .footlinks{margin-left:auto;display:flex;gap:16px}footer a:hover{color:var(--cyan)}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#071d46;border:1px solid var(--cyan);padding:12px 18px;border-radius:14px;z-index:80;box-shadow:0 0 20px #007bff55;display:none}.modal-backdrop{position:fixed;inset:0;background:#000c;z-index:70;display:none;align-items:center;justify-content:center;padding:16px}.modal{width:min(560px,100%);background:linear-gradient(145deg,#09245b,#030b24);border:1px solid var(--cyan);border-radius:20px;padding:20px;box-shadow:0 0 40px #003dff66}.modal h2{margin:0 0 8px}.modal p{color:#c6dcff;line-height:1.5}.modal-top{display:flex;align-items:center;justify-content:space-between}.close{border:1px solid #257ce4;background:#07163a;color:white;border-radius:50%;width:38px;height:38px;font-size:22px;cursor:pointer}.tap-stage{height:220px;border:1px solid #087fe8;border-radius:14px;position:relative;overflow:hidden;background:radial-gradient(circle,#142e75,#020a23);margin:12px 0;touch-action:manipulation}.target{position:absolute;width:54px;height:54px;border:0;border-radius:50%;font-size:28px;background:linear-gradient(135deg,#ffeb00,#ff158c);box-shadow:0 0 24px #ff168e;cursor:pointer}.game-stats{display:flex;justify-content:space-between;font-weight:900;color:var(--cyan)}.modal-actions{display:flex;gap:10px;flex-wrap:wrap}.secondary{border:1px solid #287eea;border-radius:24px;background:#071b42;color:white;padding:10px 15px;cursor:pointer;font-weight:800}.hidden{display:none!important}
+@media(max-width:1250px){.layout{grid-template-columns:190px minmax(0,1fr)}.rightcol{display:none}.brand{min-width:260px}.game-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.cat-strip{grid-template-columns:repeat(9,minmax(70px,1fr));overflow-x:auto}.topnav{gap:10px}}
+@media(max-width:820px){.topbar{height:auto;min-height:70px;flex-wrap:wrap;gap:10px;padding:10px 12px}.brand{min-width:0;flex:1}.brand-mark{font-size:34px}.brand-name{font-size:24px}.tagline{font-size:10px}.search-wrap{order:3;flex:1 0 100%;max-width:none}.topnav{gap:8px}.navbtn{font-size:12px;padding:5px 2px}.navbtn .ico{font-size:18px;margin-right:2px}.layout{display:block;padding:10px}.sidebar{display:flex;gap:7px;overflow-x:auto;padding:0 0 9px;margin-bottom:8px}.side-link{white-space:nowrap;flex:none;padding:8px 12px;margin:0;font-size:13px}.side-link .ico{font-size:20px;width:auto}.side-promo{display:none}.hero{height:230px}.hero-art{font-size:58px;left:0}.hero-art.right{font-size:52px;right:0}.hero h1{font-size:35px}.hero p{font-size:15px}.cat-strip{grid-template-columns:repeat(9,78px);gap:7px;margin:10px 0}.cat-tile{min-height:72px}.game-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.game-art{height:88px;font-size:45px}.game-title{font-size:12px}.game-info{padding:6px}.lower-banner{flex-wrap:wrap}.mini-games{margin-left:0;overflow-x:auto;width:100%}footer{flex-wrap:wrap;padding:12px}.footlinks{margin-left:0!important}}
+@media(max-width:480px){.topnav{width:100%;justify-content:space-around;order:2}.brand{flex:1 0 100%;justify-content:center}.search-wrap{order:3}.hero{height:210px}.hero-art{opacity:.5}.hero-art.right{opacity:.5}.hero-content{padding:8px}.hero h1{font-size:30px}.hero p{font-size:14px}.game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.game-art{height:100px;font-size:50px}.section-head h2{font-size:19px}.lower-banner .pad{font-size:34px}.lower-banner h3{font-size:15px}.mini-game{font-size:11px}.side-link{padding:8px 10px}}
+
+.info-modal{width:min(820px,100%);max-height:86vh;display:flex;flex-direction:column}
+.info-body{overflow:auto;padding:4px 8px 10px 0;color:#d9e8ff;line-height:1.7}
+.info-body h3{color:#00f0ff;margin:18px 0 6px}
+.info-body p{margin:0 0 12px}
+.info-body ul{padding-left:22px}
+.info-body li{margin:0 0 7px}
+.fav-btn:focus-visible{outline:2px solid #00f0ff;outline-offset:2px}
+
+.theme-control{display:inline-flex;align-items:center;gap:5px;white-space:nowrap;color:#eaf6ff;font-size:13px;font-weight:900;padding:7px 9px;border:1px solid #00bfff;border-radius:12px;background:linear-gradient(120deg,#071a43,#182c68);box-shadow:0 0 12px #007dff22}
+.theme-control select{max-width:92px;border:0;outline:none;background:transparent;color:inherit;font-size:12px;font-weight:800;cursor:pointer}
+.theme-control option{background:#071a43;color:#fff}
+body[data-theme="light"]{background:radial-gradient(ellipse at 50% -20%,#d9f2ff 0,#f3f8ff 48%,#eaf0ff 100%);color:#14213d}
+body[data-theme="light"] .topbar{background:#f8fbffed;border-bottom-color:#238de8}
+body[data-theme="light"] .navbtn{color:#1b3154}
+body[data-theme="light"] .navbtn.active{color:#006fd6;border-color:#008cff}
+body[data-theme="light"] .tagline{color:#385578}
+body[data-theme="light"] .search{background:linear-gradient(100deg,#fff,#e5f1ff);color:#132849;border-color:#6b70ff}
+body[data-theme="light"] .search::placeholder{color:#5b7192}
+body[data-theme="light"] .theme-control{background:linear-gradient(120deg,#fff,#dcecff);color:#17365e;border-color:#178bdf}
+body[data-theme="light"] .theme-control option{background:#fff;color:#17365e}
+body[data-theme="light"] .side-link{color:#17365e}
+body[data-theme="light"] .cat-strip{background:#e5efff;border-color:#a6c9f5}
+body[data-theme="light"] .cat-tile{color:#132849;background:linear-gradient(145deg,var(--tile),#e6f1ff)}
+body[data-theme="light"] .game-card{background:linear-gradient(180deg,#fff,#e8f2ff);border-color:#72b7f5;color:#14213d}
+body[data-theme="light"] .viewall{background:#fff;color:#006fc9}
+body[data-theme="light"] .panel{background:linear-gradient(150deg,#fff,#e5efff);color:#14213d}
+body[data-theme="light"] .panel p{color:#354d70}
+body[data-theme="light"] footer{background:#eaf2ff;color:#355173}
+body[data-theme="light"] .modal{background:linear-gradient(145deg,#fff,#e5efff);color:#14213d}
+body[data-theme="light"] .modal p,body[data-theme="light"] .info-body{color:#354d70}
+body[data-theme="light"] .info-body h3{color:#006fc9}
+body[data-theme="light"] .close,body[data-theme="light"] .secondary{background:#e6f1ff;color:#16375e}
+body[data-theme="purple"]{background:radial-gradient(ellipse at 50% -20%,#4a1878 0,#1a0b36 48%,#09051b 100%)}
+body[data-theme="purple"] .topbar{background:#16082bed;border-bottom-color:#dc65ff}
+body[data-theme="purple"] .theme-control{background:linear-gradient(120deg,#35105d,#641d91);border-color:#dc65ff}
+body[data-theme="purple"] .search{background:linear-gradient(100deg,#35105d,#4c1787);border-color:#dc65ff}
+body[data-theme="purple"] .cat-strip{background:#170b31;border-color:#6f36b5}
+body[data-theme="purple"] .game-card{background:linear-gradient(180deg,#32145b,#100722);border-color:#b64cff}
+body[data-theme="purple"] .panel{background:linear-gradient(150deg,#281044,#100722);border-color:#a84aff}
+body[data-theme="purple"] footer{background:#100720;border-top-color:#a84aff}
+body[data-theme="purple"] .navbtn.active{color:#ff91f7;border-color:#ff55dc}
+body[data-theme="purple"] .game-category{color:#ff91f7}
+body[data-theme="light"] .theme-control select{color:#17365e}
+@media(max-width:820px){.theme-control{font-size:11px;padding:5px 6px;gap:3px}.theme-control select{max-width:76px;font-size:11px}}
+
+
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Gaming.ARnc home"><span class="brand-mark">🎮</span><div><div class="brand-name">Gaming<span>.ARnc</span></div><div class="tagline">Play • Explore • Enjoy</div></div></a>
+  <div class="search-wrap"><span class="mag">⌕</span><input id="search" class="search" type="search" placeholder="Search games, categories..." aria-label="Search games"></div>
+  <nav class="topnav" aria-label="Main navigation">
+    <button class="navbtn active" data-nav="home"><span class="ico">⌂</span>Home</button>
+    <button class="navbtn" data-nav="games"><span class="ico">🎮</span>Games</button>
+    <button class="navbtn" data-nav="favorites"><span class="ico">★</span>Favorites <span id="favCount"></span></button>
+    <label class="theme-control" for="themeSelect" title="Change website theme">🎨 <span>Theme</span>
+      <select id="themeSelect" aria-label="Choose website theme">
+        <option value="neon">Neon</option>
+        <option value="light">Light</option>
+        <option value="purple">Purple</option>
+      </select>
+    </label>
+    
+  </nav>
+</header>
+<div class="layout">
+<aside class="sidebar" aria-label="Game categories">
+  <div class="side-link active" data-category="All"><span class="ico">🏠</span>Home</div>
+  <div class="side-link" data-category="All"><span class="ico">🎮</span>All Games</div>
+  <div class="side-link" data-category="Action"><span class="ico">🔥</span>Action</div>
+  <div class="side-link" data-category="Racing"><span class="ico">🏁</span>Racing</div>
+  <div class="side-link" data-category="Puzzle"><span class="ico">🧩</span>Puzzle</div>
+  <div class="side-link" data-category="Arcade"><span class="ico">👾</span>Arcade</div>
+  <div class="side-link" data-category="Sports"><span class="ico">⚽</span>Sports</div>
+  <div class="side-link" data-category="Shooting"><span class="ico">🎯</span>Shooting</div>
+  <div class="side-link" data-category="Strategy"><span class="ico">👑</span>Strategy</div>
+  <div class="side-link" data-category="Adventure"><span class="ico">⛰️</span>Adventure</div>
+  <div class="side-link" data-category="Girls"><span class="ico">💗</span>Girls</div>
+  <div class="side-link" data-category="Multiplayer"><span class="ico">👥</span>Multiplayer</div>
+  <div class="side-promo"><span class="big">🎮</span><h3>Play Anytime<br>Anywhere</h3><p>▣ On Mobile • Tablet • Desktop</p></div>
+</aside>
+<main class="main">
+  <section class="hero">
+    <span class="hero-art" aria-hidden="true">🕹️</span><span class="hero-art right" aria-hidden="true">🚀</span>
+    <div class="hero-content"><div class="crown">♛</div><div class="eyebrow">WELCOME TO</div><h1>Gaming<span>.ARnc</span></h1><p>Play Your Favorite Games<br>Online • Free • Anytime!</p><button class="primary" id="startPlaying">▶ &nbsp; Start Playing</button><div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div></div>
+  </section>
+  <section class="cat-strip" id="categoryTiles" aria-label="Popular categories">
+    <button class="cat-tile active" data-category="All" style="--tile:#7a19ff"><span class="ico">🎮</span>All Games</button>
+    <button class="cat-tile" data-category="Action" style="--tile:#ff174c"><span class="ico">🔥</span>Action</button>
+    <button class="cat-tile" data-category="Adventure" style="--tile:#00a66c"><span class="ico">⛰️</span>Adventure</button>
+    <button class="cat-tile" data-category="Racing" style="--tile:#087bff"><span class="ico">🏁</span>Racing</button>
+    <button class="cat-tile" data-category="Puzzle" style="--tile:#ffb800"><span class="ico">🧩</span>Puzzle</button>
+    <button class="cat-tile" data-category="Arcade" style="--tile:#8a18ff"><span class="ico">👾</span>Arcade</button>
+    <button class="cat-tile" data-category="Sports" style="--tile:#00a9ad"><span class="ico">⚽</span>Sports</button>
+    <button class="cat-tile" data-category="Shooting" style="--tile:#ed087b"><span class="ico">🎯</span>Shooting</button>
+    <button class="cat-tile" data-category="Girls" style="--tile:#ff6900"><span class="ico">👑</span>Girls</button>
+  </section>
+  <section id="gamesSection">
+    <div class="section-head"><h2 id="sectionTitle">🔥 Popular Games</h2><button class="viewall" id="viewAll">View All ❯</button></div>
+    <div class="game-grid" id="gameGrid"></div>
+  </section>
+  <section class="lower-banner">
+    <span class="pad">🎮</span><div><h3>Play Our Original Games</h3><p>Neon Tap • Orbit Tap • Color Circuit • Meteor Mayhem</p></div>
+    <div class="mini-games"><button class="mini-game" data-original="neon"><b>🟣</b> Neon Tap　▶ Play Now</button><button class="mini-game" data-original="orbit"><b>🪐</b> Orbit Tap　▶ Play Now</button><button class="mini-game" data-original="meteor"><b>☄️</b> Meteor Mayhem　▶ Play Now</button></div>
+  </section>
+</main>
+<aside class="rightcol">
+  <section class="panel">
+    <div class="feature-label">👑 Featured Game</div>
+    <a href="https://www.crazygames.com/game/moto-x3m" target="_blank" rel="noopener noreferrer" aria-label="Play Moto X3M on CrazyGames"><div class="featured-art"><span>🏍️</span></div></a>
+    <h2>Moto X3M</h2><p>Race, stunt and beat the clock through wild obstacle courses!</p><a class="featured-play" href="https://www.crazygames.com/game/moto-x3m" target="_blank" rel="noopener noreferrer">▶ &nbsp; Play Now</a>
+    <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+  </section>
+  <section class="panel"><h2 class="rank-title">⭐ Top Rated Games</h2>
+    <div class="rank"><span class="ranknum">1</span><span class="rank-art">🏍️</span><span class="rank-name">Moto X3M</span><span class="rating">★ 4.9</span></div>
+    <div class="rank"><span class="ranknum">2</span><span class="rank-art">🧠</span><span class="rank-name">World's Hardest Game</span><span class="rating">★ 4.8</span></div>
+    <div class="rank"><span class="ranknum">3</span><span class="rank-art">🌀</span><span class="rank-name">Glitch Dash</span><span class="rating">★ 4.7</span></div>
+    <div class="rank"><span class="ranknum">4</span><span class="rank-art">🧩</span><span class="rank-name">Inca Cubes 2048</span><span class="rating">★ 4.6</span></div>
+    <div class="rank"><span class="ranknum">5</span><span class="rank-art">🚀</span><span class="rank-name">MiniMissions</span><span class="rating">★ 4.5</span></div>
+  </section>
+</aside>
+</div>
+<footer><strong>Gaming.ARnc</strong><span>© 2026 Gaming.ARnc. All rights reserved.</span><div class="footlinks"><a href="https://www.crazygames.com/" target="_blank" rel="noopener noreferrer">Explore Games</a><a href="https://poki.com/en/difficult" target="_blank" rel="noopener noreferrer">Difficult Games</a><a href="#" id="aboutLink">About</a><a href="#" id="privacyLink">Privacy</a><a href="#" id="contactLink">Contact</a></div></footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal"><div class="modal-top"><h2 id="modalTitle">🎮 Original Game</h2><button class="close" id="closeModal" aria-label="Close">×</button></div><p id="modalDescription">Tap the glowing target as many times as you can before time runs out.</p><div class="game-stats"><span>Score: <b id="score">0</b></span><span>Time: <b id="time">20</b>s</span><span>Best: <b id="best">0</b></span></div><div class="tap-stage" id="tapStage"><button class="target" id="target" aria-label="Tap target">✦</button></div><div class="modal-actions"><button class="primary" id="restartGame">▶ Start / Restart</button><button class="secondary" id="pauseGame">Ⅱ Pause</button></div><p style="font-size:12px;margin-bottom:0">Original Gaming.ARnc mini-game demo. No external game assets used.</p></div>
+</div>
+
+<div class="modal-backdrop" id="infoBackdrop" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+  <div class="modal info-modal">
+    <div class="modal-top"><h2 id="infoTitle">About Gaming.ARnc</h2><button class="close" id="closeInfo" aria-label="Close">×</button></div>
+    <div id="infoBody" class="info-body"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+const games=[
+{id:'moto',name:'Moto X3M',category:'Racing',icon:'🏍️',c1:'#0aa8ff',c2:'#ff3a31',glow:'#fff000',p1:'#ff6a00',p2:'#ffcf00',url:'https://www.crazygames.com/game/moto-x3m',source:'CrazyGames',desc:'Bike stunts and challenging obstacle tracks.'},
+{id:'worlds',name:"World's Hardest Game",category:'Puzzle',icon:'🟥',c1:'#ff2e67',c2:'#3c0a99',glow:'#00f0ff',p1:'#06c6ff',p2:'#1261ff',url:'https://poki.com/en/g/worlds-hardest-game',source:'Poki',desc:'Dodge hazards and test your precision.'},
+{id:'glitch',name:'Glitch Dash',category:'Arcade',icon:'🌀',c1:'#150a4b',c2:'#fb00d5',glow:'#00f9ff',p1:'#ff168e',p2:'#6b17ff',url:'https://poki.com/en/g/glitch-dash',source:'Poki',desc:'A fast reflex challenge through neon obstacles.'},
+{id:'inca',name:'Inca Cubes 2048',category:'Puzzle',icon:'🔷',c1:'#00c9ff',c2:'#103a86',glow:'#ffde00',p1:'#00d5ff',p2:'#1262ff',url:'https://www.crazygames.com/game/inca-cubes-2048',source:'CrazyGames',desc:'Merge matching cubes to build bigger numbers.'},
+{id:'mini',name:'MiniMissions',category:'Arcade',icon:'🎯',c1:'#f900a8',c2:'#5024ff',glow:'#ffe000',p1:'#f900a8',p2:'#782cff',url:'https://poki.com/en/g/minimissions',source:'Poki',desc:'A collection of short timing-based challenges.'},
+{id:'level',name:'Level Devil',category:'Action',icon:'😈',c1:'#fc4d32',c2:'#4a075f',glow:'#ffed00',p1:'#ff4d42',p2:'#ff9d00',url:'https://poki.com/en/g/level-devil',source:'Poki',desc:'A tricky platformer full of unexpected traps.'},
+{id:'rotate',name:'Rotate',category:'Puzzle',icon:'🔄',c1:'#1dd7ff',c2:'#172b8e',glow:'#e800ff',p1:'#06dfff',p2:'#6b43ff',url:'https://poki.com/en/g/rotate',source:'Poki',desc:'Rotate the world to solve platform puzzles.'},
+{id:'thereisnogame',name:'There Is No Game',category:'Adventure',icon:'🕵️',c1:'#f0a326',c2:'#b20d6a',glow:'#ffeb00',p1:'#ffb900',p2:'#ff4a9e',url:'https://poki.com/en/g/there-is-no-game',source:'Poki',desc:'A playful puzzle adventure that breaks the rules.'},
+{id:'cubes',name:'Cubes 2048.io',category:'Multiplayer',icon:'🧊',c1:'#1ce2ff',c2:'#2151de',glow:'#baff00',p1:'#00d8ff',p2:'#116bff',url:'https://www.crazygames.com/game/cubes-2048-io',source:'CrazyGames',desc:'Collect and merge cubes in a 3D arena.'},
+{id:'impossible',name:'The Impossible Quiz 2',category:'Puzzle',icon:'❓',c1:'#ff9e00',c2:'#e51c54',glow:'#fff000',p1:'#ffb800',p2:'#ff4b17',url:'https://poki.com/en/g/the-impossible-quiz-2',source:'Poki',desc:'Answer bizarre questions and avoid tricky traps.'},
+{id:'basket',name:'Basketball Stars',category:'Sports',icon:'🏀',c1:'#f36b16',c2:'#9b1d08',glow:'#ffe000',p1:'#ff8a00',p2:'#ff3e00',url:'https://www.crazygames.com/',source:'CrazyGames',desc:'Find sports and basketball games on CrazyGames.'},
+{id:'shell',name:'Shell Shockers',category:'Shooting',icon:'🥚',c1:'#0ce4e9',c2:'#18328d',glow:'#fff000',p1:'#04d7ee',p2:'#155cff',url:'https://www.crazygames.com/',source:'CrazyGames',desc:'Explore browser shooting games on CrazyGames.'},
+{id:'subway',name:'Subway Surfers',category:'Adventure',icon:'🚆',c1:'#ffca00',c2:'#ed2d75',glow:'#00eaff',p1:'#00d5ff',p2:'#007bff',url:'https://poki.com/',source:'Poki',desc:'Explore endless runner games on Poki.'},
+{id:'fruit',name:'Fruit Slice',category:'Arcade',icon:'🍉',c1:'#00d66b',c2:'#ff7d00',glow:'#ffed00',p1:'#00d66b',p2:'#00aaff',url:'https://poki.com/en/categories/arcade-games',source:'Poki',desc:'Browse arcade games with quick, satisfying rounds.'},
+{id:'castle',name:'Fantasy Quest',category:'Girls',icon:'🏰',c1:'#ff80ce',c2:'#5923c9',glow:'#fff000',p1:'#ff39b7',p2:'#852bff',url:'https://poki.com/en/categories/games-for-girls',source:'Poki',desc:'Explore dress-up, fantasy and creative games.'},
+{id:'football',name:'Football Challenge',category:'Sports',icon:'⚽',c1:'#00d99b',c2:'#007a75',glow:'#ffe000',p1:'#00dfa2',p2:'#00a5d8',url:'https://poki.com/en/categories/football-games',source:'Poki',desc:'Discover football games on Poki.'},
+{id:'orbit',name:'Orbit Tap',category:'Original',icon:'🪐',c1:'#2c19a8',c2:'#eb20d2',glow:'#00f7ff',p1:'#822cff',p2:'#ff168e',url:'#original-orbit',source:'Gaming.ARnc',desc:'Original Gaming.ARnc tap-to-score mini game.'},
+{id:'neon',name:'Neon Tap',category:'Original',icon:'✨',c1:'#081b62',c2:'#00cfff',glow:'#ff16d4',p1:'#00dfff',p2:'#8a20ff',url:'#original-neon',source:'Gaming.ARnc',desc:'Original Gaming.ARnc reflex mini game.'},
+{id:'meteor',name:'Meteor Mayhem',category:'Original',icon:'☄️',c1:'#ff5b18',c2:'#5110a7',glow:'#ffed00',p1:'#ff5a00',p2:'#e000ff',url:'#original-meteor',source:'Gaming.ARnc',desc:'Original Gaming.ARnc arcade mini game.'}
+];
+let activeCategory='All',favorites=JSON.parse(localStorage.getItem('gamingARNcFavorites')||'[]'),showFavorites=false,showAll=false;
+const grid=document.getElementById('gameGrid'),search=document.getElementById('search'),toast=document.getElementById('toast');
+
+const themeSelect=document.getElementById('themeSelect');
+function applyTheme(theme){
+  const safeTheme=['neon','light','purple'].includes(theme)?theme:'neon';
+  document.body.dataset.theme=safeTheme;
+  themeSelect.value=safeTheme;
+  localStorage.setItem('gamingARNcTheme',safeTheme);
+  const themeColors={neon:'#031033',light:'#eaf2ff',purple:'#16082b'};
+  document.querySelector('meta[name="theme-color"]').setAttribute('content',themeColors[safeTheme]);
+}
+themeSelect.addEventListener('change',()=>applyTheme(themeSelect.value));
+applyTheme(localStorage.getItem('gamingARNcTheme')||'neon');
+
+function notify(msg){toast.textContent=msg;toast.style.display='block';clearTimeout(notify.t);notify.t=setTimeout(()=>toast.style.display='none',2400)}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function card(g){const fav=favorites.includes(g.id);const internal=g.url.startsWith('#original-');const href=internal?'#':g.url;return `<article class="game-card" data-id="${g.id}" tabindex="0" aria-label="Open ${escapeHtml(g.name)}"><div class="game-art" style="--c1:${g.c1};--c2:${g.c2};--glow:${g.glow}"><span>${g.icon}</span><button class="fav-btn" data-fav="${g.id}" aria-label="${fav?'Remove from':'Add to'} favorites" title="Favorite" style="position:absolute;right:6px;top:5px;border:0;border-radius:0;background:transparent;color:${fav?'#ffe000':'white'};width:29px;height:29px;cursor:pointer;z-index:2;font-size:25px;text-shadow:0 1px 5px #00102b">${fav?'★':'☆'}</button></div><div class="game-info"><div class="game-title">${escapeHtml(g.name)}</div><div class="game-category">${g.icon} ${escapeHtml(g.category==='Original'?'Original Game':g.category)} • ${escapeHtml(g.source)}</div>${internal?`<button class="play" data-original="${g.id}" style="--play1:${g.p1};--play2:${g.p2}">▶ Play Now</button>`:`<a class="play" href="${href}" target="_blank" rel="noopener noreferrer" style="--play1:${g.p1};--play2:${g.p2}">▶ Play Now ↗</a>`}</div></article>`}
+function render(){let q=search.value.trim().toLowerCase();let list=games.filter(g=>(activeCategory==='All'||g.category.toLowerCase()===activeCategory.toLowerCase())&&(!showFavorites||favorites.includes(g.id))&&(!q||(g.name+' '+g.category+' '+g.source+' '+g.desc).toLowerCase().includes(q)));document.getElementById('sectionTitle').textContent=showFavorites?'★ Favorite Games':q?'🔎 Search Results':activeCategory==='All'?'🔥 Popular Games':`🎮 ${activeCategory} Games`;document.getElementById('favCount').textContent=favorites.length?`(${favorites.length})`:'';if(!list.length){grid.innerHTML='<div class="empty">No games found. Try another search or category.</div>';return}if(!showAll&&!q&&!showFavorites&&activeCategory==='All')list=list.slice(0,10);grid.innerHTML=list.map(card).join('')}
+function setCategory(cat){activeCategory=cat;showFavorites=false;document.querySelectorAll('[data-category]').forEach(el=>el.classList.toggle('active',el.dataset.category===cat));document.querySelectorAll('.navbtn').forEach(el=>el.classList.toggle('active',el.dataset.nav==='games'&&cat!=='All'));render();document.getElementById('gamesSection').scrollIntoView({behavior:'smooth',block:'start'})}
+document.querySelectorAll('[data-category]').forEach(el=>el.addEventListener('click',()=>setCategory(el.dataset.category)));
+search.addEventListener('input',()=>{showAll=true;render()});
+document.getElementById('viewAll').addEventListener('click',()=>{showAll=!showAll;document.getElementById('viewAll').textContent=showAll?'Show Less ❮':'View All ❯';render()});
+document.getElementById('startPlaying').addEventListener('click',()=>{showAll=true;setCategory('All')});
+document.querySelectorAll('[data-nav]').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('[data-nav]').forEach(b=>b.classList.toggle('active',b===btn));if(btn.dataset.nav==='favorites'){showFavorites=true;showAll=true;render();document.getElementById('gamesSection').scrollIntoView({behavior:'smooth'})}else if(btn.dataset.nav==='games'){showFavorites=false;showAll=true;setCategory('All')}else{showFavorites=false;activeCategory='All';search.value='';showAll=false;render();window.scrollTo({top:0,behavior:'smooth'})}}));
+
+grid.addEventListener('click',e=>{const fav=e.target.closest('[data-fav]');if(fav){e.preventDefault();e.stopPropagation();const id=fav.dataset.fav;favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];localStorage.setItem('gamingARNcFavorites',JSON.stringify(favorites));render();return}const orig=e.target.closest('[data-original]');if(orig){openOriginal(orig.dataset.original);return}const c=e.target.closest('.game-card');if(c&&e.target.closest('.game-art')){const g=games.find(x=>x.id===c.dataset.id);if(g&&g.url.startsWith('#original-'))openOriginal(g.id)}});grid.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('game-card')){e.preventDefault();const g=games.find(x=>x.id===e.target.dataset.id);if(g.url.startsWith('#original-'))openOriginal(g.id);else window.open(g.url,'_blank','noopener')}})
+document.querySelectorAll('[data-original]').forEach(b=>b.addEventListener('click',()=>openOriginal(b.dataset.original)));
+
+const infoBackdrop=document.getElementById('infoBackdrop');
+const infoTitle=document.getElementById('infoTitle');
+const infoBody=document.getElementById('infoBody');
+const aboutContent = `
+<h3>Welcome to Gaming.ARnc</h3>
+<p>Gaming.ARnc is a browser-based gaming discovery website created to make finding and opening casual online games simple, colorful, and enjoyable. The website brings game links, category browsing, search, favorite selection, featured recommendations, and a few small original mini-games together in one interface. Its visual style uses a dark blue background, bright neon accents, colorful game tiles, and responsive sections designed to work on desktop computers, tablets, and mobile screens.</p>
+<p>The purpose of Gaming.ARnc is to provide a convenient starting point for people who enjoy quick entertainment. Visitors can explore the games listed on the page, browse categories such as Action, Racing, Puzzle, Arcade, Sports, Shooting, Adventure, and more, or use the search box to narrow down the visible cards. Each game card includes a title, category, source label, artwork-style icon, and a Play Now link when an external destination is provided. The Favorites feature lets visitors mark games they may want to find again.</p>
+<h3>How the website works</h3>
+<p>Gaming.ARnc is delivered as a standard HTML page using CSS for its appearance and JavaScript for interactive behavior. In this version, the game list and links are included in the page's code. Search filters the available list by title, category, source, and description. Category buttons filter the list to a selected type. View All expands the list, while Show Less returns the main page to its shorter presentation. The Home, Games, and Favorites navigation controls help visitors move between the main views without needing to reload the page.</p>
+<p>Some cards open websites operated by third parties. Those external websites provide their own games, hosting, content, and rules. Gaming.ARnc is an independent portal and does not claim ownership of third-party games or their branding. A link on this page is provided as a convenience; it does not mean that the linked company sponsors, approves, or operates Gaming.ARnc. When a visitor selects an external game, that destination may load in a separate browser tab.</p>
+<h3>Original mini-games</h3>
+<p>The page also contains simple original mini-game demonstrations, including Neon Tap, Orbit Tap, and Meteor Mayhem. These are small reaction-based experiences intended for casual play. The player starts a short round, taps a target, and watches the score and remaining time. A best score is saved in the current browser so the visitor can compare later attempts on the same browser profile. These demonstrations are intentionally lightweight and do not require a Gaming.ARnc account.</p>
+<h3>Design and accessibility</h3>
+<p>The interface uses high-contrast text, clear buttons, category labels, and touch-friendly controls. Layout rules adapt the page to narrower screens, moving the category navigation into a horizontally scrollable row and reducing the number of cards displayed across. Keyboard users can access many controls, and the game cards include labels to explain their purpose. The site aims to keep its layout consistent while making common actions easy to identify.</p>
+<p>Emojis and gradients are used as illustrative artwork in this sample layout. They are visual placeholders and should not be understood as screenshots or official logos for the linked games. Actual gameplay, performance, availability, age suitability, advertisements, and terms are controlled by the destination website when an external game is opened.</p>
+<h3>What visitors should know</h3>
+<p>Gaming.ARnc is provided as an entertainment and discovery page. The website does not promise that every external link will always work, that every game will be available in every country, or that third-party services will remain unchanged. A linked site may move a game, update its requirements, display its own notices, or stop offering a title. If a link is unavailable, visitors can return to Gaming.ARnc and try another category or game.</p>
+<p>Visitors should use the internet responsibly, follow the rules of the websites they open, and ask a parent or trusted adult for guidance when needed. Do not enter sensitive information into a third-party game unless you understand why it is requested and trust that service. Gaming.ARnc does not ask visitors to create an account in this version. The site is designed to be straightforward: open the page, explore the available options, and choose what to play.</p>
+<h3>Independent project and future improvements</h3>
+<p>Gaming.ARnc is an independent web project that can be improved over time. Future versions may add more game categories, better descriptions, additional original games, accessibility refinements, and clearer information about external destinations. Any future feature should be described honestly and should work within the technical limits of a browser-based HTML site. Features that require a server, online accounts, cross-device syncing, or remote storage would need additional infrastructure and should not be implied to exist unless they are actually implemented.</p>
+<p>Thank you for visiting Gaming.ARnc. The goal is to offer a welcoming place to discover casual games while keeping navigation understandable and the core interface familiar. Explore the categories, search for a title, save favorites in this browser, and enjoy the games that are available to you.</p>
+`;
+const privacyContent = `
+<h3>Privacy information for Gaming.ARnc</h3>
+<p>This Privacy Notice explains how the current Gaming.ARnc HTML website handles information when you browse the page. It describes the behavior built into this version of the site, including browser-based favorites, local best scores, search, and links to external game websites. Please read it carefully. If the website is later hosted online or changed to include new services, this notice should be reviewed and updated to match the actual implementation.</p>
+<h3>1. No account required</h3>
+<p>The current version does not provide a registration form, sign-in system, user profile, payment page, or account database. You can browse categories, search games, open available links, and play the built-in mini-game demonstrations without creating a Gaming.ARnc account. The page's code does not send the favorites list or mini-game best scores to a Gaming.ARnc server.</p>
+<h3>2. Information stored in your browser</h3>
+<p>To make the page more convenient, JavaScript uses your browser's localStorage for two small features. Favorite game IDs are saved under a browser storage key so the Favorites view can show your selections again. Best scores for the original mini-games are saved separately so a previous high score can be displayed the next time you play that mini-game in the same browser profile. This information is stored locally on your device by your browser; it is not automatically synchronized to another device and is not uploaded by this page's current code.</p>
+<p>Local browser storage may remain after you close the tab or restart the browser. People who share the same computer and browser profile may be able to see the saved favorites or scores. You can clear site data or browser storage using your browser's privacy settings, but doing so may also remove other website preferences. If browser storage is disabled or unavailable, favorites and best-score features may not persist as expected.</p>
+<h3>3. Search and interaction</h3>
+<p>The search field filters the game information already included in the page. In this version, the search term is processed in the browser to match game names, categories, sources, and descriptions. The page does not include a built-in search analytics service or send the typed query to a Gaming.ARnc search server. Clicking categories, opening the About or Privacy panels, and playing the original mini-games are handled by page scripts.</p>
+<h3>4. External game websites</h3>
+<p>Game cards and footer links may take you to third-party websites, including game platforms. Once you open an external destination, that website's own privacy notice, cookies, advertising systems, security practices, and terms may apply. The external provider may collect technical data such as browser details, IP address, usage events, or information you choose to submit, according to its own policies. Gaming.ARnc does not control those websites and cannot guarantee how they process information. Review the destination's privacy information before using its services, and leave the site if you are uncomfortable with its requests.</p>
+<p>External links are provided for convenience and are not a guarantee of safety, availability, quality, or endorsement. The current page opens many external game links in a new tab with standard link protections. A third-party website may use cookies or similar technologies independently of Gaming.ARnc. This notice does not replace or summarize the privacy policy of any external platform.</p>
+<h3>5. Cookies and tracking</h3>
+<p>The current HTML code does not intentionally create its own advertising cookies or include a built-in analytics tracker. It does use localStorage for favorites and scores, which is browser storage rather than a traditional cookie. However, the hosting provider, browser, network, or third-party website may process technical information as part of normal internet operation. If analytics, advertisements, embedded content, or additional external scripts are added in a future version, this section must be updated to explain those technologies and any choices available to visitors.</p>
+<h3>6. Children and family use</h3>
+<p>Gaming.ARnc is a general game discovery page and does not ask visitors for their name, home address, phone number, precise location, photographs, or other personal details. The site cannot verify the age of visitors. Some linked games or third-party websites may have age requirements, advertising, chat features, purchases, or content that is not appropriate for every age group. Parents and guardians should help younger visitors choose suitable games and review the rules and privacy terms of external services. Do not share personal information in a game or website unless you and a trusted adult understand the request.</p>
+<h3>7. Data security and retention</h3>
+<p>Because favorites and best scores remain in local browser storage, their retention depends on the browser and device. They may remain until you clear them, clear site data, use a private browsing session that removes storage on exit, or use a different browser profile. Protect access to shared devices and use your browser's built-in privacy controls when appropriate. No internet-connected service can promise absolute security, and this static page does not provide a server-side account or recovery system for local preferences.</p>
+<h3>8. Your choices</h3>
+<ul>
+<li>You can use the website without entering personal information into Gaming.ARnc.</li>
+<li>You can stop using the page or close it at any time.</li>
+<li>You can clear local browser storage through your browser settings if you want to remove saved favorites and best scores.</li>
+<li>You can choose not to open an external game link.</li>
+<li>You can review the privacy policy and terms on each third-party website you choose to visit.</li>
+</ul>
+<h3>9. Changes to this notice</h3>
+<p>This notice may be revised when the site changes. The date and content should be reviewed whenever new features are added, especially if the site later introduces accounts, cloud saving, user uploads, comments, analytics, advertisements, or contact forms. Such features can change what information is collected and how it is used. The website owner should publish an updated notice that accurately describes any new processing before relying on it.</p>
+<h3>10. Contact and limits</h3>
+<p>The current footer contains a sample contact address. Because it uses an example-style domain, it may not be a working support address; replace it with a real contact address before publishing the site publicly. This HTML page does not currently include a backend contact form. Do not send passwords, payment details, or other sensitive information through an unverified contact route.</p>
+<p>This Privacy Notice describes the behavior visible in the supplied HTML file and is general information, not legal advice. Privacy obligations depend on where a website operates, who uses it, and which services are added. If Gaming.ARnc is published for public use or begins collecting personal information, the owner should obtain appropriate legal guidance and ensure that the published policy reflects the deployed website exactly.</p>
+`;
+function openInfo(which){
+  const isAbout=which==='about';
+  infoTitle.textContent=isAbout?'🎮 About Gaming.ARnc':'🔒 Privacy Policy';
+  infoBody.innerHTML=isAbout?aboutContent:privacyContent;
+  infoBackdrop.style.display='flex';
+  document.getElementById('closeInfo').focus();
+}
+document.getElementById('aboutLink').addEventListener('click',e=>{e.preventDefault();openInfo('about')});
+document.getElementById('privacyLink').addEventListener('click',e=>{e.preventDefault();openInfo('privacy')});
+
+document.getElementById('contactLink').addEventListener('click',e=>{
+  e.preventDefault();
+  infoTitle.textContent='✉️ Contact Us';
+  infoBody.innerHTML=`
+    <h3>Contact us</h3>
+    <p><strong>Website:</strong> Gaming.ARnc</p>
+    <p><strong>Privacy / Support Email:</strong> subham99209114@gmail.com</p>
+    <p><strong>Contact no:</strong> 7544095688</p>
+  `;
+  infoBackdrop.style.display='flex';
+  document.getElementById('closeInfo').focus();
+});
+
+function closeInfo(){infoBackdrop.style.display='none'}
+document.getElementById('closeInfo').addEventListener('click',closeInfo);
+infoBackdrop.addEventListener('click',e=>{if(e.target===infoBackdrop)closeInfo()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeInfo()});
+
+const backdrop=document.getElementById('modalBackdrop'),stage=document.getElementById('tapStage'),target=document.getElementById('target');let score=0,time=20,interval=null,running=false,gameType='neon';
+function openOriginal(type){gameType=type;const names={neon:['✨ Neon Tap','Tap the glowing target as many times as possible before time runs out.'],orbit:['🪐 Orbit Tap','Hit the moving star to score. Stay quick — the target changes position.'],meteor:['☄️ Meteor Mayhem','Tap the meteor before it escapes. How many can you catch in 20 seconds?']};document.getElementById('modalTitle').textContent=(names[type]||names.neon)[0];document.getElementById('modalDescription').textContent=(names[type]||names.neon)[1];backdrop.style.display='flex';resetGame();setTarget();document.getElementById('restartGame').focus()}
+function setTarget(){const maxX=Math.max(0,stage.clientWidth-58),maxY=Math.max(0,stage.clientHeight-58);target.style.left=Math.floor(Math.random()*maxX)+'px';target.style.top=Math.floor(Math.random()*maxY)+'px';target.textContent=gameType==='meteor'?'☄️':gameType==='orbit'?'✦':'✧'}
+function resetGame(){clearInterval(interval);score=0;time=20;running=false;document.getElementById('score').textContent=score;document.getElementById('time').textContent=time;document.getElementById('best').textContent=localStorage.getItem('gamingARncBest_'+gameType)||0;target.disabled=false;target.style.opacity='1';setTarget()}
+function startGame(){clearInterval(interval);score=0;time=20;running=true;document.getElementById('score').textContent=score;document.getElementById('time').textContent=time;target.disabled=false;target.style.opacity='1';setTarget();interval=setInterval(()=>{if(!running)return;time--;document.getElementById('time').textContent=time;if(time<=0){running=false;clearInterval(interval);target.disabled=true;target.style.opacity='.35';const best=Math.max(score,Number(localStorage.getItem('gamingARncBest_'+gameType)||0));localStorage.setItem('gamingARncBest_'+gameType,best);document.getElementById('best').textContent=best;notify('Time up! Your score: '+score+' 🎮')}},1000)}
+target.addEventListener('click',()=>{if(!running){if(time===20&&score===0)startGame();else return}score++;document.getElementById('score').textContent=score;setTarget()});
+document.getElementById('restartGame').addEventListener('click',startGame);document.getElementById('pauseGame').addEventListener('click',()=>{if(running){running=false;document.getElementById('pauseGame').textContent='▶ Resume'}else if(time>0){running=true;document.getElementById('pauseGame').textContent='Ⅱ Pause'}});
+function closeModal(){clearInterval(interval);backdrop.style.display='none';running=false}
+document.getElementById('closeModal').addEventListener('click',closeModal);backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+render();
+})();
+</script>
+</body>
+</html>
